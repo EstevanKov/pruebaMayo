@@ -1,0 +1,50 @@
+echo '<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores</title>
+</head>
+<body>
+    <script>
+        let sabores = ["piña", "melón", "camarón"];
+
+        function contarSabores() {
+            console.log(`Cantidad de sabores: ${sabores.length}`);
+        }
+
+        function mostrarSabores() {
+            console.log("Sabores:", sabores);
+        }
+
+        function agregarSabor(sabor) {
+            sabores.push(sabor);
+            console.log(`Sabor ${sabor} agregado`);
+        }
+
+        function saludar(nombre) {
+            console.log(`¡Hola ${nombre}, bienvenido a git!`);
+        }
+
+        function main() {
+            let nombre = prompt("Por favor, ingrese su nombre:");
+            saludar(nombre);
+
+            mostrarSabores();
+            
+            let nuevoSabor1 = prompt("Por favor, ingrese un nuevo sabor para agregar:");
+            agregarSabor(nuevoSabor1);
+
+            contarSabores();
+            mostrarSabores();
+            
+            let nuevoSabor2 = prompt("Por favor, ingrese otro nuevo sabor para agregar:");
+            agregarSabor(nuevoSabor2);
+
+            contarSabores();
+        }
+
+        main();
+    </script>
+</body>
+</html>' > index.html
